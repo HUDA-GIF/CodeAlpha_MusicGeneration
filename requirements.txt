@@ -1,0 +1,10 @@
+# AI Music Generation Dependencies
+tensorflow==2.19.0
+music21==9.3.0
+pretty_midi==0.2.11
+numpy==2.0.2
+matplotlib==3.10.0
+midi2audio==0.1.1
+
+# Optional: For better MIDI playback
+fluidsynth==2.3.0
