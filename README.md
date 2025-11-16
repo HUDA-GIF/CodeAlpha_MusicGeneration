@@ -1,7 +1,7 @@
 # 🎵 AI Music Generation - CodeAlpha Task 3
 
 ## Live Demo
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/your-notebook-link)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/https://colab.research.google.com/drive/1nO-phM0UbuiftUWVq7j7nFBX5hRprnRR)
 
 - ## 🎯 Training Results - PROVEN SUCCESS!
 
