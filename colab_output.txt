@@ -1,0 +1,177 @@
+Requirement already satisfied: music21 in /usr/local/lib/python3.12/dist-packages (9.3.0)
+Collecting pretty_midi
+  Downloading pretty_midi-0.2.11.tar.gz (5.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 41.5 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: tensorflow in /usr/local/lib/python3.12/dist-packages (2.19.0)
+Collecting midi2audio
+  Downloading midi2audio-0.1.1-py2.py3-none-any.whl.metadata (5.7 kB)
+Requirement already satisfied: chardet in /usr/local/lib/python3.12/dist-packages (from music21) (5.2.0)
+Requirement already satisfied: joblib in /usr/local/lib/python3.12/dist-packages (from music21) (1.5.2)
+Requirement already satisfied: jsonpickle in /usr/local/lib/python3.12/dist-packages (from music21) (4.1.1)
+Requirement already satisfied: matplotlib in /usr/local/lib/python3.12/dist-packages (from music21) (3.10.0)
+Requirement already satisfied: more-itertools in /usr/local/lib/python3.12/dist-packages (from music21) (10.8.0)
+Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (from music21) (2.0.2)
+Requirement already satisfied: requests in /usr/local/lib/python3.12/dist-packages (from music21) (2.32.4)
+Requirement already satisfied: webcolors>=1.5 in /usr/local/lib/python3.12/dist-packages (from music21) (25.10.0)
+Collecting mido>=1.1.16 (from pretty_midi)
+  Downloading mido-1.3.3-py3-none-any.whl.metadata (6.4 kB)
+Requirement already satisfied: six in /usr/local/lib/python3.12/dist-packages (from pretty_midi) (1.17.0)
+Requirement already satisfied: importlib_resources in /usr/local/lib/python3.12/dist-packages (from pretty_midi) (6.5.2)
+Requirement already satisfied: absl-py>=1.0.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (1.4.0)
+Requirement already satisfied: astunparse>=1.6.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (1.6.3)
+Requirement already satisfied: flatbuffers>=24.3.25 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (25.9.23)
+Requirement already satisfied: gast!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (0.6.0)
+Requirement already satisfied: google-pasta>=0.1.1 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (0.2.0)
+Requirement already satisfied: libclang>=13.0.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (18.1.1)
+Requirement already satisfied: opt-einsum>=2.3.2 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (3.4.0)
+Requirement already satisfied: packaging in /usr/local/lib/python3.12/dist-packages (from tensorflow) (25.0)
+Requirement already satisfied: protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.3 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (5.29.5)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from tensorflow) (75.2.0)
+Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (3.2.0)
+Requirement already satisfied: typing-extensions>=3.6.6 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (4.15.0)
+Requirement already satisfied: wrapt>=1.11.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (2.0.1)
+Requirement already satisfied: grpcio<2.0,>=1.24.3 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (1.76.0)
+Requirement already satisfied: tensorboard~=2.19.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (2.19.0)
+Requirement already satisfied: keras>=3.5.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (3.10.0)
+Requirement already satisfied: h5py>=3.11.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (3.15.1)
+Requirement already satisfied: ml-dtypes<1.0.0,>=0.5.1 in /usr/local/lib/python3.12/dist-packages (from tensorflow) (0.5.3)
+Requirement already satisfied: wheel<1.0,>=0.23.0 in /usr/local/lib/python3.12/dist-packages (from astunparse>=1.6.0->tensorflow) (0.45.1)
+Requirement already satisfied: rich in /usr/local/lib/python3.12/dist-packages (from keras>=3.5.0->tensorflow) (13.9.4)
+Requirement already satisfied: namex in /usr/local/lib/python3.12/dist-packages (from keras>=3.5.0->tensorflow) (0.1.0)
+Requirement already satisfied: optree in /usr/local/lib/python3.12/dist-packages (from keras>=3.5.0->tensorflow) (0.17.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests->music21) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.12/dist-packages (from requests->music21) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests->music21) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/dist-packages (from requests->music21) (2025.10.5)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.12/dist-packages (from tensorboard~=2.19.0->tensorflow) (3.10)
+Requirement already satisfied: tensorboard-data-server<0.8.0,>=0.7.0 in /usr/local/lib/python3.12/dist-packages (from tensorboard~=2.19.0->tensorflow) (0.7.2)
+Requirement already satisfied: werkzeug>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from tensorboard~=2.19.0->tensorflow) (3.1.3)
+Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib->music21) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.12/dist-packages (from matplotlib->music21) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib->music21) (4.60.1)
+Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib->music21) (1.4.9)
+Requirement already satisfied: pillow>=8 in /usr/local/lib/python3.12/dist-packages (from matplotlib->music21) (11.3.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib->music21) (3.2.5)
+Requirement already satisfied: python-dateutil>=2.7 in /usr/local/lib/python3.12/dist-packages (from matplotlib->music21) (2.9.0.post0)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /usr/local/lib/python3.12/dist-packages (from werkzeug>=1.0.1->tensorboard~=2.19.0->tensorflow) (3.0.3)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.12/dist-packages (from rich->keras>=3.5.0->tensorflow) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.12/dist-packages (from rich->keras>=3.5.0->tensorflow) (2.19.2)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/dist-packages (from markdown-it-py>=2.2.0->rich->keras>=3.5.0->tensorflow) (0.1.2)
+Downloading midi2audio-0.1.1-py2.py3-none-any.whl (8.7 kB)
+Downloading mido-1.3.3-py3-none-any.whl (54 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.6/54.6 kB 3.3 MB/s eta 0:00:00
+Building wheels for collected packages: pretty_midi
+  Building wheel for pretty_midi (setup.py) ... done
+  Created wheel for pretty_midi: filename=pretty_midi-0.2.11-py3-none-any.whl size=5595886 sha256=65093bf526a59b492978219b4907cfc14c9b5492157708eaa0eccab78bc04864
+  Stored in directory: /root/.cache/pip/wheels/f4/ad/93/a7042fe12668827574927ade9deec7f29aad2a1001b1501882
+Successfully built pretty_midi
+Installing collected packages: midi2audio, mido, pretty_midi
+Successfully installed midi2audio-0.1.1 mido-1.3.3 pretty_midi-0.2.11
+✅ All packages installed and imported successfully!
+TensorFlow version: 2.19.0
+GPU Available: []
+📥 Downloading sample MIDI files...
+📁 You can also upload your own MIDI files (optional):
+5ive_-_Keep_On_Moving.mid
+5ive_-_Keep_On_Moving.mid(audio/mid) - 50946 bytes, last modified: 15/11/2025 - 100% done
+Saving 5ive_-_Keep_On_Moving.mid to 5ive_-_Keep_On_Moving.mid
+✅ Uploaded 1 files
+🎹 Found 5 MIDI files: ['beethoven.mid', 'bach.mid', '5ive_-_Keep_On_Moving.mid', 'mozart.mid', '5ive_-_Keep_On_Moving.mid']
+🎵 Extracting notes with robust parser...
+📖 Attempting to parse: beethoven.mid
+   ❌ Method 1 failed: badly formatted midi bytes, got: b''
+   ❌ Method 2 failed: 
+   ❌ Method 3 failed: badly formatted midi bytes, got: b''
+   💡 File beethoven.mid might be corrupted or in unsupported format
+📖 Attempting to parse: bach.mid
+/usr/local/lib/python3.12/dist-packages/music21/stream/base.py:3689: Music21DeprecationWarning: .flat is deprecated.  Call .flatten() instead
+  return self.iter().getElementsByClass(classFilterList)
+   ❌ Method 1 failed: cannot access local variable 'note' where it is not associated with a value
+   ✅ Method 2: Extracted 3391 notes
+📖 Attempting to parse: 5ive_-_Keep_On_Moving.mid
+   ❌ Method 1 failed: 'Note' object has no attribute 'Note'
+   ✅ Method 2: Extracted 6220 notes
+📖 Attempting to parse: mozart.mid
+/usr/local/lib/python3.12/dist-packages/music21/midi/translate.py:874: TranslateWarning: Unable to determine instrument from <music21.midi.MidiEvent SEQUENCE_TRACK_NAME, track=10, channel=None, data=b'\xa5L\xa4\xa3\xb7R\xa7\xda'>; getting generic Instrument
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/music21/midi/translate.py:874: TranslateWarning: Unable to determine instrument from <music21.midi.MidiEvent SEQUENCE_TRACK_NAME, track=12, channel=None, data=b'\xb0\xdb\xa1R\xb2\xf6\xa4\xe5\xbd\xab'>; getting generic Instrument
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/music21/midi/translate.py:874: TranslateWarning: Unable to determine instrument from <music21.midi.MidiEvent SEQUENCE_TRACK_NAME, track=13, channel=None, data=b'\xb5\xfc\xa1R\xb7\xa8\xa5\xdf\xbcw'>; getting generic Instrument
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/music21/midi/translate.py:874: TranslateWarning: Unable to determine instrument from <music21.midi.MidiEvent SEQUENCE_TRACK_NAME, track=14, channel=None, data=b'\xa6\xb1\xa1R\xb3\xaf\xa4p\xc1\xf8'>; getting generic Instrument
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/music21/midi/translate.py:874: TranslateWarning: Unable to determine instrument from <music21.midi.MidiEvent SEQUENCE_TRACK_NAME, track=16, channel=None, data=b'\xbds\xa6\xb1\xa2A\xbds\xbcg\xa1R\xa6\xb0\xa4\xe5'>; getting generic Instrument
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/music21/midi/translate.py:874: TranslateWarning: Unable to determine instrument from <music21.midi.MidiEvent SEQUENCE_TRACK_NAME, track=17, channel=None, data=b'\xa7\xb9\xa6\xa8\xa4\xe9\xb4\xc1\xa1R1998\xa6~2\xa4\xeb27\xa4\xe9'>; getting generic Instrument
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/music21/midi/translate.py:874: TranslateWarning: Unable to determine instrument from <music21.midi.MidiEvent SEQUENCE_TRACK_NAME, track=19, channel=None, data=b'\xa1\xa7\xa6\xb0\xa4\xe5\xad\xb5\xbc\xd6\xa4u\xa7@\xab\xc7\xa1\xa8'>; getting generic Instrument
+  warnings.warn(
+   ❌ Method 1 failed: 'Note' object has no attribute 'Note'
+   ✅ Method 2: Extracted 2578 notes
+📖 Attempting to parse: 5ive_-_Keep_On_Moving.mid
+   ❌ Method 1 failed: 'Note' object has no attribute 'Note'
+   ✅ Method 2: Extracted 6220 notes
+
+📊 Summary: Successfully parsed 4/5 files
+✅ Total notes available: 18409
+🎹 Sample notes: ['D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2', 'D2']
+
+📊 Music Analysis:
+Total notes: 18409
+Unique notes/chords: 71
+Most common notes: [('D#4', 2207), ('G#3', 1572), ('A3', 1364), ('D3', 973), ('B3', 910), ('D2', 890), ('A4', 838), ('D4', 772), ('C#2', 697), ('F#3', 604)]
+
+🔧 Preparing training sequences...
+✅ Data preparation complete!
+Input shape: (18359, 50, 1)
+Output shape: (18359, 71)
+Vocabulary size: 71
+Number of training sequences: 18359
+🧠 Building LSTM neural network...
+/usr/local/lib/python3.12/dist-packages/keras/src/layers/rnn/rnn.py:199: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ lstm (LSTM)                     │ (None, 50, 256)        │       264,192 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout (Dropout)               │ (None, 50, 256)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ batch_normalization             │ (None, 50, 256)        │         1,024 │
+│ (BatchNormalization)            │                        │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm_1 (LSTM)                   │ (None, 256)            │       525,312 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_1 (Dropout)             │ (None, 256)            │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ batch_normalization_1           │ (None, 256)            │         1,024 │
+│ (BatchNormalization)            │                        │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 128)            │        32,896 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_2 (Dropout)             │ (None, 128)            │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_1 (Dense)                 │ (None, 71)             │         9,159 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 833,607 (3.18 MB)
+ Trainable params: 832,583 (3.18 MB)
+ Non-trainable params: 1,024 (4.00 KB)
+🚀 Starting training for 50 epochs...
+Epoch 1/50
+459/459 ━━━━━━━━━━━━━━━━━━━━ 206s 438ms/step - accuracy: 0.1444 - loss: 3.5296 - val_accuracy: 0.0645 - val_loss: 3.5835
+Epoch 2/50
+459/459 ━━━━━━━━━━━━━━━━━━━━ 191s 416ms/step - accuracy: 0.2146 - loss: 2.8338 - val_accuracy: 0.2729 - val_loss: 2.4550
+Epoch 3/50
+459/459 ━━━━━━━━━━━━━━━━━━━━ 203s 417ms/step - accuracy: 0.2612 - loss: 2.5531 - val_accuracy: 0.3527 - val_loss: 2.1311
+Epoch 4/50
+459/459 ━━━━━━━━━━━━━━━━━━━━ 193s 421ms/step - accuracy: 0.3087 - loss: 2.3541 - val_accuracy: 0.3853 - val_loss: 1.9493
+Epoch 5/50
+459/459 ━━━━━━━━━━━━━━━━━━━━ 191s 417ms/step - accuracy: 0.3509 - loss: 2.1887 - val_accuracy: 0.4553 - val_loss: 1.6942
+Epoch 6/50
+459/459 ━━━━━━━━━━━━━━━━━━━━ 188s 410ms/step - accuracy: 0.3817 - loss: 2.0667 - val_accuracy: 0.4730 - val_loss: 1.5604
+Epoch 7/50
+459/459 ━━━━━━━━━━━━━━━━━━━━ 191s 416ms/step - accuracy: 0.4177 - loss: 1.9308 - val_accuracy: 0.5237 - val_loss: 1.4825
+Epoch 8/50
+225/459 ━━━━━━━━━━━━━━━━━━━━ 1:31 389ms/step - accuracy: 0.4279 - loss: 1.8372
