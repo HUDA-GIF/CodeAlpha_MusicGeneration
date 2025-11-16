@@ -1,7 +1,10 @@
 # 🎵 AI Music Generation - CodeAlpha Task 3
 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HUDA-GIF/CodeAlpha_MusicGeneration/blob/main/music_generation_.ipynb)
+
 ## Live Demo
-(https://colab.research.google.com/github/HUDA-GIF/CodeAlpha_MusicGeneration/blob/main/music_generation_.ipynb)
+Click the Colab badge above to run the AI music generator instantly! 🚀
 
 - ## 🎯 Training Results - PROVEN SUCCESS!
 
