@@ -35,6 +35,14 @@ Click the Colab badge above to run the AI music generator instantly! 🚀
 2. Click "Runtime" → "Run all"
 3. Download the generated MIDI files
 
+## 🔧 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/HUDA-GIF/CodeAlpha_MusicGeneration.git
+
+# Install dependencies
+pip install -r requirements.txt
 ---
 
 **CodeAlpha AI Internship - Task 3 Completed** ✅
